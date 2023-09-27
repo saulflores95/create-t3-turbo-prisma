@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  mysql:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: turbo-local-db
+    ports:
+      - "3306:3306"
